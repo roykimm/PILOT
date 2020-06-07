@@ -10,9 +10,9 @@
   "scripts": {
     "heroku-postbuild": "cd client && yarn && yarn run build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon index.js",
+    "start": "nodemon index.js",
     "client": "yarn --cwd ./client run start",
-    "dev": "concurrently \"yarn run server\" \"yarn run client\""
+    "dev": "concurrently \"yarn run start\" \"yarn run client\""
   },
   "author": "",
   "license": "ISC",
