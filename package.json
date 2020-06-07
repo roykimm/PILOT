@@ -1,13 +1,13 @@
 {
   "name": "pilot",
   "version": "1.0.0",
-  "engines" : {
-    "node" : "13.x"
+  "engines": {
+    "node": "13.x"
   },
   "description": "",
   "main": "index.js",
   "scripts": {
-    "heroku-postbuild": "cd client && npm install && npm run build",
+    "heroku-postbuild": "cd client && yarn install && yarn run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon index.js",
     "client": "yarn --cwd ./client run start",
